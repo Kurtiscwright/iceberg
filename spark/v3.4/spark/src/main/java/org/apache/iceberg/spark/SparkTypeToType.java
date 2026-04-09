@@ -154,6 +154,7 @@ class SparkTypeToType extends SparkTypeVisitor<Type> {
     } else if (atomic instanceof DecimalType) {
       return Types.DecimalType.of(
           ((DecimalType) atomic).precision(), ((DecimalType) atomic).scale());
+
     } else if (atomic instanceof BinaryType) {
       return Types.BinaryType.get();
 
