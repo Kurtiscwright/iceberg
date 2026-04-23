@@ -36,7 +36,6 @@ import org.apache.spark.sql.types.FloatType$;
 import org.apache.spark.sql.types.IntegerType$;
 import org.apache.spark.sql.types.LongType$;
 import org.apache.spark.sql.types.MapType$;
-import org.apache.spark.sql.types.NullType$;
 import org.apache.spark.sql.types.Metadata;
 import org.apache.spark.sql.types.MetadataBuilder;
 import org.apache.spark.sql.types.NullType$;
