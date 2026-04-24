@@ -42,7 +42,7 @@ public class TestORCDataFrameWrite extends DataFrameWriteTestBase {
         .isInstanceOf(SparkException.class)
         .cause()
         .isInstanceOf(IllegalArgumentException.class)
-        .hasMessageStartingWith("Cannot convert element Parquet: unknown");
+        .hasMessageStartingWith("Cannot create ListType with unknown element type");
   }
 
   @Test
@@ -52,6 +52,6 @@ public class TestORCDataFrameWrite extends DataFrameWriteTestBase {
         .isInstanceOf(SparkException.class)
         .cause()
         .isInstanceOf(IllegalArgumentException.class)
-        .hasMessageStartingWith("Cannot convert value Parquet: unknown");
+        .hasMessageStartingWith("Cannot create MapType with unknown value type");
   }
 }
